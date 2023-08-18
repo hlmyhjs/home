@@ -9,7 +9,8 @@
             -
           </span>
           {{ fullYear }}
-          <a :href="SiteUrl">{{ SiteAnthor }}</a>
+          <!-- <a :href="SiteUrl">{{ SiteAnthor }}</a> -->
+          <!-- <a>{{ SiteAnthor }}</a> -->
         </span>
         <!-- 以下信息请不要修改哦 -->
         <span class="hidden">
@@ -19,7 +20,7 @@
           </a>
         </span>
         <!-- 站点备案 -->
-        <a v-if="siteIcp" href="https://beian.miit.gov.cn" target="_blank">
+        <a v-if="siteIcp" href="http://beian.miit.gov.cn" target="_blank">
           &amp;
           {{ siteIcp }}
         </a>

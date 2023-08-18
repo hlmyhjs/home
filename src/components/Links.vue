@@ -88,7 +88,7 @@ const jumpLink = (data) => {
   if (data.name === "音乐" && store.musicClick) {
     if (typeof $openList === "function") $openList();
   } else {
-    window.open(data.link, "_blank");
+    data.link && window.open(data.link, "_blank");
   }
 };
 
