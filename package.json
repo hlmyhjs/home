@@ -4,7 +4,7 @@
   "github": "https://github.com/hlmyhjs/home",
   "home": "https://xianyanbao.top",
   "private": true,
-  "version": "4.1.2",
+  "version": "4.1.3",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
