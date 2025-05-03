@@ -5,7 +5,7 @@
       <el-col :span="12">
         <div class="left">
           <Hitokoto />
-          <Music />
+          <Music v-if="playerHasId" />
         </div>
       </el-col>
       <el-col :span="12">
@@ -40,6 +40,9 @@ const store = mainStore();
 // 当前时间
 const currentTime = ref({});
 const timeInterval = ref(null);
+
+// 播放器 id
+const playerHasId = import.meta.env.VITE_SONG_ID;
 
 // 更新时间
 const updateTimeData = () => {
@@ -123,6 +126,15 @@ onBeforeUnmount(() => {
           font-size: 3.25rem;
           letter-spacing: 2px;
           font-family: "UnidreamLED";
+        }
+        @media (min-width: 1201px) and (max-width: 1280px) {
+          font-size: 1rem;
+        }
+        @media (min-width: 911px) and (max-width: 992px) {
+          font-size: 1rem;
+          .text {
+            font-size: 2.75rem;
+          }
         }
       }
       .weather {
